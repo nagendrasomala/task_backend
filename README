@@ -1,54 +1,45 @@
+# Backend README  
 
-# Backend README
+## Project Overview  
+This is the backend service for the login system, built using Express.js and PostgreSQL. It provides API endpoints for user authentication, registration, and protected routes.  
 
-## Project Overview
-This is the backend service for the login system, built using Express.js and PostgreSQL. It provides API endpoints for user authentication, registration, and protected routes.
+## Tech Stack  
+- Node.js  
+- Express.js  
+- PostgreSQL  
+- Prisma ORM  
+- JWT Authentication  
+- dotenv (for environment variables)  
 
-## Tech Stack
-- Node.js
-- Express.js
-- PostgreSQL
-- Prisma ORM
-- JWT Authentication
-- dotenv (for environment variables)
+## Setup Instructions  
 
-## Setup Instructions
+### Prerequisites  
+Ensure you have the following installed:  
+- Node.js (v18 or later)  
+- PostgreSQL  
+- npm or yarn  
 
-### Prerequisites
-Ensure you have the following installed:
-- Node.js (v18 or later)
-- PostgreSQL
-- npm or yarn
+### Installation  
+1. Clone the repository:  
+   git clone https://github.com/your-repo/backend.git  
+   cd backend  
 
-### Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/backend.git
-   cd backend
-   ```
-2. Install dependencies:
-   ```sh
-   npm install  # or yarn install
-   ```
-3. Create a `.env` file in the root directory and configure the database connection:
-   ```sh
-   DATABASE_URL=postgresql://your_user:your_password@your_host/your_db
-   JWT_SECRET=your_jwt_secret
-   PORT=5000
-   ```
-4. Run database migrations:
-   ```sh
-   npx prisma migrate dev
-   ```
-5. Generate Prisma client:
-   ```sh
-   npx prisma generate
-   ```
+2. Install dependencies:  
+   npm install  or  yarn install  
 
-### Running the Project
-To start the server:
-```sh
-npm start  # or yarn start
-```
-The backend will be running at `http://localhost:5000`.
+3. Create a `.env` file in the root directory and configure the database connection:  
+   DATABASE_URL=postgresql://your_user:your_password@your_host/your_db  
+   JWT_SECRET=your_jwt_secret  
+   PORT=5000  
 
+4. Run database migrations:  
+   npx prisma migrate dev  
+
+5. Generate Prisma client:  
+   npx prisma generate  
+
+### Running the Project  
+To start the server:  
+npm start  or  yarn start  
+
+The backend will be running at http://localhost:5000.
